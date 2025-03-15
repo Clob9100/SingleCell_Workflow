@@ -228,8 +228,8 @@ cluster.markers %>%
   ungroup() -> top10
 DoHeatmap(nsclc.seurat.obj, features = top10$gene) + NoLegend()
 
-# This code snippet identifies the top 5 differentially expressed genes for each cluster with an average log-fold change greater than 1.3.
-# The results are stored in the top10 object, which contains the top 5 genes for each cluster that show significant differential expression.
+# This code snippet identifies the top 10 differentially expressed genes for each cluster with an average log-fold change greater than 1.3.
+# The results are stored in the top10 object, which contains the top 10 genes for each cluster that show significant differential expression.
 # The DoHeatmap function generates a heatmap of the expression levels of these top genes across all cells in the dataset.
 # The heatmap helps to visualize the expression patterns of these genes in different cell populations and identify cluster-specific markers that can be used to characterize the cell types.
 
